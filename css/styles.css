@@ -53,6 +53,7 @@ ul {
 
 .header-contacts {
   margin-left: auto;
+  display: flex;
 }
 
 .header-logo,
@@ -71,6 +72,7 @@ ul {
 }
 
 .header-list {
+  margin-right: auto;
   display: flex;
 }
 
@@ -103,11 +105,23 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  align-items: center;
 }
 
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
+}
+
+.mail-icon {
+  fill: currentColor;
+  margin-right: 11px;
+}
+
+.phone-icon {
+  fill: currentColor;
+  margin-right: 10.5px;
 }
 
 .header-tel:hover,
@@ -117,7 +131,15 @@ ul {
 /* ------------------------------------MAIN */
 /* ------------------------------------HERO */
 .hero {
-  background: #2f303a;
+  background-color: rgba(47, 48, 58, 1);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -175,6 +197,16 @@ ul {
 .skills-item {
   display: block;
   width: 270px;
+}
+
+.skills-icon-container {
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-item-title {
@@ -265,12 +297,107 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.worker-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.worker-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.worker-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.worker-social-icon {
+  fill: #afb1b8;
+}
+
+.worker-social-link:hover,
+.worker-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.worker-social-link:hover
+  .worker-social-icon,
+.worker-social-link:focus
+  .worker-social-icon {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+/* -----------------------------------CLIENTS */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titles-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
 /* ------------------------------------FOOTER */
 .foot-block {
   background: #2f303a;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.foot-container-1-2 {
+  display: flex;
+}
+
+.foot-container1 {
+  margin-right: 70px;
 }
 
 .foot-logo {
@@ -306,14 +433,26 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.foot-mail:hover,
-.foot-mail:focus {
-  color: var(--accent-color);
+.foot-container2 {
+  margin-top: 12px;
 }
 
-.foot-tel:hover,
-.foot-tel:focus {
-  color: var(--accent-color);
+.foot-bl2-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.foot-icon-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.foot-icon {
+  fill: #ffffff;
 }
 /* -----------------------------------------------END */
 /* -----------------------------------------PORTFOLIO */
